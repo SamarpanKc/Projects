@@ -54,4 +54,4 @@ Putting it all together, the addTask function works as follows:
 1. It checks if the input box is empty.
 2. If empty, it shows an alert.
 3. If not, it creates a new list item with the task text and appends it to the list container.
-Finally, it clears the input box for the next input.
+4. Finally, it clears the input box for the next input.
