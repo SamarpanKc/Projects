@@ -34,7 +34,7 @@ else {
 If the input box is not empty:
 
 - let li = document.createElement("li");
-Creates a new list item (<li>) element.
+Creates a new list item (li) element.
 
 - li.innerHTML = inputBox.value;
 Sets the content of this list item to the value of the input box (i.e., the task text).
