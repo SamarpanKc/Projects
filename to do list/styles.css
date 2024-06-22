@@ -14,6 +14,7 @@ body{
     background-color: #fffffc;
     text-align: start;
     border-radius: 18px;
+    animation: fadeIn 1s ease-in-out;
 }
 .container .top .todo{
     font-family: "DM Serif Text", serif;
@@ -56,7 +57,7 @@ body{
     font-size: 16px;
     margin-left: 6px;
     cursor: pointer;
-    transition: 1s;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .container .input button:hover{
     background-color: #2c42b2;
@@ -75,6 +76,7 @@ body{
     position: relative;
     padding-left: 3rem;
     margin-right: 2rem;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .mainbox ul li::before {
@@ -93,6 +95,7 @@ body{
 .mainbox ul li.checked{
     color: #777777;
     text-decoration: line-through;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 .mainbox ul li.checked::before{
     background-image: url(checked\ circle.png);
@@ -105,8 +108,35 @@ body{
     height: 32px;
     font-size: 22px;
     text-align: center;
+    transition: background-color 0.3s ease-in-out;
 }
 .mainbox ul li span:hover{
     background-color: #e5e5e5;
     border-radius: 50%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.mainbox ul li.remove {
+    animation: fadeOut 0.5s ease-in-out;
 }
