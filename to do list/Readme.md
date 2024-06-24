@@ -9,7 +9,7 @@ https://todolistsamarpan.netlify.app/
 These lines are selecting HTML elements and storing them in variables.
 
 inputBox is a reference to an input element with the ID "input-box".
-listContainer is a reference to a container element (like a div or ul) with the ID "listscontainer" where the tasks will be appended.
+listContainer is a reference to a container element (like a `div` or `ul`) with the ID "listscontainer" where the tasks will be appended.
 
 ## Function Definition
 ```js
@@ -36,7 +36,7 @@ else {
 If the input box is not empty:
 
 - let li = document.createElement("li");
-Creates a new list item (li) element.
+Creates a new list item (`li`) element.
 
 - li.innerHTML = inputBox.value;
 Sets the content of this list item to the value of the input box (i.e., the task text).
