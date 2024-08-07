@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #6916B5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 30vw;
+    height: 84vh;
+    background: #FEF7FF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 13px 15px 67px -34px rgba(32,25,37,0.5);
+    -moz-box-shadow: 13px 15px 67px -34px rgba(32,25,37,0.5);
+    box-shadow: 13px 15px 67px -34px rgba(32,25,37,0.5);
+}
+.box .circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    border: solid 8px #a088b1;
+    background-color: #6916B5;
+    overflow: hidden; /* This ensures the image doesn't overflow the circle */
+}
+.box .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle without stretching */
+    border-radius: 50%; /* Makes sure the image itself is circular */
+}
+.box .nameTitle {
+    font-family: "Lexend Deca", sans-serif;
+    color: #201925;
+    margin-top: 46px;
+    text-align: center;
+}
+.box .nameTitle h3{
+    margin-bottom: 6px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.box .nameTitle h5{
+    font-size: 13.59px;
+    font-weight: 500;
+}
+/* .box .followBtn button a{
+    text-decoration: none;
+} */
+.box .followBtn button{
+    margin: 22px;
+    background-color: #201925;
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    border-radius: 5px;
+    color: #FEF7FF;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .followBtn button:hover{
+    background-color: #FEF7FF;
+    color: #201925;
+    transition: .3s ease-in;
+    border: #201925 solid 2px;
+}
+.box .followBtn button span{
+    font-size: 20px;
+    margin-right: 8px; /* Adjust margin as needed */
+}
+.box .icons img,i{
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+.icons .fa-brands{
+    line-height: 0;
+}
+.icons .fa-2xl {
+    font-size: 2em;
+    line-height: 32px;
+    vertical-align: 4px;
+}
+
+.box .icons{
+    margin:18px;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.box .para{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 500;
+    margin: 22px 36px;
+    text-align: center;
+}
+
+.box #first, #second, #third {
+    position: absolute;
+    top: 50%;
+}
+
+.box #first {
+    left: 38vw;
+    top: 120px;
+    opacity: .3;
+    rotate: 60deg;
+}
+
+.box #second {
+    right: 42vw;
+    top: 218px;
+    opacity: .3;
+    rotate: -60deg;
+}
+.box #third {
+    right: 37vw;
+    top: 88px;
+    opacity: .3;
+    rotate: -40deg;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px){
+    .box {
+        width: 88vw;
+        height: 78vh;
+    }
+    .box .followBtn button{
+        width: 24vw;
+        height: 5vh;
+    }
+    .box .circle {
+        width: 180px;
+        height: 180px;
+    }
+    .box .nameTitle h3{
+        font-size: 26px;
+    }
+    .box .nameTitle h5{
+        font-size: 26/1.618px;
+        font-weight: 500;
+    }
+    .box #first {
+        left: 12vw;
+        top: 180px;
+    }
+    
+    .box #second {
+        right: 22vw;
+        top: 298px;
+    }
+    .box #third {
+        right: 12vw;
+        top: 128px;
+        opacity: .3;
+        rotate: -40deg;
+    }
+}
