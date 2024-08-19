@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+/* Countdown Container */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Countdown Styling */
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Countdown Item */
+.countdown-item {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.countdown-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.countdown-label {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .countdown {
+        flex-direction: column;
+    }
+
+    .countdown-item {
+        margin: 10px 0;
+    }
+}
