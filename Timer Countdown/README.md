@@ -35,7 +35,7 @@ The countdown timer calculates the time remaining until a specific target date a
 </body>
 </html>
 ```
-- **\`<div class="countdown">\`**: This is the container for the countdown timer. It holds four \`<p>\` elements that will display the days, hours, minutes, and seconds left.
+- **`<div class="countdown">`**: This is the container for the countdown timer. It holds four \`<p>\` elements that will display the days, hours, minutes, and seconds left.
 
 ## CSS Styling
 ```css
@@ -61,9 +61,9 @@ body {
     margin: 10px 0;
 }
 ```
-- **\`body\`**: Centers the countdown timer on the page with a clean, simple design.
-- **\`countdown\`**: Styles the container with padding, rounded corners, and a shadow for a card-like effect.
-- **\`p\`**: Increases the font size for clear visibility of the countdown numbers.
+- **`body`**: Centers the countdown timer on the page with a clean, simple design.
+- **`countdown`**: Styles the container with padding, rounded corners, and a shadow for a card-like effect.
+- **`p`**: Increases the font size for clear visibility of the countdown numbers.
 
 ## JavaScript Functionality
 ```javascript
@@ -89,9 +89,9 @@ function Counter() {
 // Update the countdown every second
 setInterval(Counter, 1000);
 ```
-- **\`targetDate\`**: This stores the target date and time in milliseconds.
-- **\`Counter()\`**: The main function that calculates the time difference, breaks it down into days, hours, minutes, and seconds, and updates the webpage with these values.
-- **\`setInterval(Counter, 1000)\`**: Runs the \`Counter\` function every second, keeping the countdown updated in real-time.
+- **`targetDate`**: This stores the target date and time in milliseconds.
+- **`Counter()`**: The main function that calculates the time difference, breaks it down into days, hours, minutes, and seconds, and updates the webpage with these values.
+- **`setInterval(Counter, 1000)`**: Runs the \`Counter\` function every second, keeping the countdown updated in real-time.
 
 ## How It Works
 1. **Set the Target Date**: The script sets the target date (\`August 23, 2024, 00:00:00\`).
