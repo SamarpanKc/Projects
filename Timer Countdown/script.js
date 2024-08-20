@@ -1,18 +1,18 @@
 const targetDate = new Date('August 23, 2024 00:00:00').getTime();
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const timeDifference = targetDate - now;
+function Counter() {
+    const timeNow = new Date().getTime();
+    const timeDiff = targetDate - timeNow;
 
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    const Days = Math.floor(timeDiff / (1000*60*60*24));
+    const Hours = Math.floor((timeDiff % (1000*60*60*24))/(1000*60*60));
+    const Min = Math.floor((timeDiff % (1000*60*60))/(1000*60));
+    const Sec = Math.floor((timeDiff % (1000*60))/(1000));
 
-        document.querySelector('.days').innerText = `${days}`;
-        document.querySelector('.hours').innerText = `${hours}`;
-        document.querySelector('.minutes').innerText = `${minutes}`;
-        document.querySelector('.seconds').innerText = `${seconds}`;
-        }
+    document.querySelector('.days').innerText = Days;
+    document.querySelector('.hours').innerText = Hours;
+    document.querySelector('.minutes').innerText = Min;
+    document.querySelector('.seconds').innerText = Sec;
+}
 
-setInterval(updateCountdown, 1000);
+setInterval(Counter, 1000);
