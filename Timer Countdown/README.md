@@ -105,3 +105,4 @@ setInterval(Counter, 1000);
 
 ## Conclusion
 This countdown timer project demonstrates basic date and time manipulation in JavaScript, as well as how to dynamically update the DOM to display changing data. It's a useful exercise for learning how to work with time-related functions in JavaScript and creating interactive web elements.
+
